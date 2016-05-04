@@ -1,0 +1,632 @@
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git init
+Initialized empty Git repository in C:/Users/LIPLADMIN/Desktop/MyLocalRepo/.git/
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git remote add origin https://github.com/ajaiswal595/learning-Utilities.git
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git remote -v
+origin  https://github.com/ajaiswal595/learning-Utilities.git (fetch)
+origin  https://github.com/ajaiswal595/learning-Utilities.git (push)
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git remote remove origin
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git remote -v
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git remote add myorigin https://github.com/ajaiswal595/learning-Utilities.git
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git remote -v
+myorigin        https://github.com/ajaiswal595/learning-Utilities.git (fetch)
+myorigin        https://github.com/ajaiswal595/learning-Utilities.git (push)
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       ReadMe.txt
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git add ReadMe.txt
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   ReadMe.txt
+#
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git rm --cached ReadMe.txt
+rm 'ReadMe.txt'
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       ReadMe.txt
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git add .
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   ReadMe.txt
+#
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git rm --cached README.tXt
+rm 'ReadMe.txt'
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       ReadMe.txt
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git add --all
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   ReadMe.txt
+#
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   ReadMe.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       .gitignore
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   ReadMe.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       .gitignore
+#       ajay.txt
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   ReadMe.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       .gitignore
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git add .gitignore
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   .gitignore
+#       new file:   ReadMe.txt
+#
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   .gitignore
+#       new file:   ReadMe.txt
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       new dummy file.txt
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   .gitignore
+#       new file:   ReadMe.txt
+#
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   .gitignore
+#
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git add .gitignore
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   .gitignore
+#       new file:   ReadMe.txt
+#
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git config --user.name  "ajaiswal595"
+error: unknown option `user.name'
+usage: git config [options]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color <slot>    find the color configured: [default]
+    --get-colorbool <slot>
+                          find the color setting: [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --includes            respect include directives on lookup
+
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git config --global user.name "ajaiswal595"
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git config --global user.email "ajaiswal595@gmail.com"
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#       new file:   .gitignore
+#       new file:   ReadMe.txt
+#
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git commit -m intial "commit by ajay"
+error: pathspec 'commit by ajay' did not match any file(s) known to git.
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git commit -m "initial commit by ajay"
+[master (root-commit) becc13f] initial commit by ajay
+ 2 files changed, 2 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 ReadMe.txt
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch master
+nothing to commit, working directory clean
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git log
+WARNING: terminal is not fully functional
+commit becc13f1130eab78c9c850f351e013120f8b2ea5
+Author: ajaiswal595 <ajaiswal595@gmail.com>
+Date:   Wed May 4 16:13:11 2016 +0530
+
+    initial commit by ajay
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git log
+WARNING: terminal is not fully functional
+commit becc13f1130eab78c9c850f351e013120f8b2ea5
+Author: ajaiswal595 <ajaiswal595@gmail.com>
+Date:   Wed May 4 16:13:11 2016 +0530
+
+    initial commit by ajay
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git remote -v
+myorigin        https://github.com/ajaiswal595/learning-Utilities.git (fetch)
+myorigin        https://github.com/ajaiswal595/learning-Utilities.git (push)
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git push myorigin master
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get: -c: line 0: syntax error near unexpected token `('
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get: -c: line 0: `\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get'
+Username for 'https://github.com': ajaiswal595
+Password for 'https://ajaiswal595@github.com':
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" erase: -c: line 0: syntax error near unexpected token `('
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" erase: -c: line 0: `\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" erase'
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ajaiswal595/learning-Utilities.git/'
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git push myorigin master
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get: -c: line 0: syntax error near unexpected token `('
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get: -c: line 0: `\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get'
+Username for 'https://github.com': ajaiswal595
+Password for 'https://ajaiswal595@github.com':
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store: -c: line 0: syntax error near unexpected token `('
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store: -c: line 0: `\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store'
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 284 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/ajaiswal595/learning-Utilities.git
+ * [new branch]      master -> master
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>gitn ssh-keygen rsa -c "ajaiswal595@gmail.com"
+'gitn' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git ssh-keygen rsa -c "ajaiswal595@gmail.com"
+git: 'ssh-keygen' is not a git command. See 'git --help'.
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git --help
+usage: git [--version] [--help] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty Git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and merge with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+'git help -a' and 'git help -g' lists available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch
+* master
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git barach mybrach
+git: 'barach' is not a git command. See 'git --help'.
+
+Did you mean this?
+        branch
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git brach
+git: 'brach' is not a git command. See 'git --help'.
+
+Did you mean this?
+        branch
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch
+* master
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch mybranch
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch
+* master
+  mybranch
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git checkout mybrach
+error: pathspec 'mybrach' did not match any file(s) known to git.
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git checkout mybranch
+Switched to branch 'mybranch'
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch
+  master
+* mybranch
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git checkout -b newbrach
+Switched to a new branch 'newbrach'
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git brach
+git: 'brach' is not a git command. See 'git --help'.
+
+Did you mean this?
+        branch
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch
+  master
+  mybranch
+* newbrach
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git checkout master
+Switched to branch 'master'
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch
+* master
+  mybranch
+  newbrach
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch
+* master
+  mybranch
+  newbrach
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git checkout newbranch
+error: pathspec 'newbranch' did not match any file(s) known to git.
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch newbranch
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch
+* master
+  mybranch
+  newbrach
+  newbranch
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git rm branch newbrach
+fatal: pathspec 'branch' did not match any files
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch -D newbrach
+Deleted branch newbrach (was becc13f).
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch -v
+* master    becc13f initial commit by ajay
+  mybranch  becc13f initial commit by ajay
+  newbranch becc13f initial commit by ajay
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git checkout newbranch
+Switched to branch 'newbranch'
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>echo > newfile1.txt
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch newbranch
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       newfile1.txt
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git add --all
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch newbranch
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#       new file:   newfile1.txt
+#
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git commit -m "added a new file to newbranch"
+[newbranch 154bbec] added a new file to newbranch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 newfile1.txt
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch newbranch
+nothing to commit, working directory clean
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git push myorigin newbranch
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get: -c: line 0: syntax error near unexpected token `('
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get: -c: line 0: `\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get'
+Username for 'https://github.com': ajaiswal595
+Password for 'https://ajaiswal595@github.com':
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store: -c: line 0: syntax error near unexpected token `('
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store: -c: line 0: `\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store'
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 329 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ajaiswal595/learning-Utilities.git
+ * [new branch]      newbranch -> newbranch
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git checkout mybranch
+Switched to branch 'mybranch'
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch mybranch
+nothing to commit, working directory clean
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch -v
+  master    becc13f initial commit by ajay
+* mybranch  becc13f initial commit by ajay
+  newbranch 154bbec added a new file to newbranch
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git merge newbranch
+Updating becc13f..154bbec
+Fast-forward
+ newfile1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 newfile1.txt
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git status
+# On branch mybranch
+nothing to commit, working directory clean
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git push myorigin mybranch
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get: -c: line 0: syntax error near unexpected token `('
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get: -c: line 0: `\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get'
+Username for 'https://github.com': ajaiswal595
+Password for 'https://ajaiswal595@github.com':
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store: -c: line 0: syntax error near unexpected token `('
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store: -c: line 0: `\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store'
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/ajaiswal595/learning-Utilities.git
+ * [new branch]      mybranch -> mybranch
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git checkout master
+Switched to branch 'master'
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git branch -v
+* master    becc13f initial commit by ajay
+  mybranch  154bbec added a new file to newbranch
+  newbranch 154bbec added a new file to newbranch
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git merge mybranch
+Updating becc13f..154bbec
+Fast-forward
+ newfile1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 newfile1.txt
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git push myorigin
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get: -c: line 0: syntax error near unexpected token `('
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get: -c: line 0: `\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get'
+Username for 'https://github.com': ajaiswal595
+Password for 'https://ajaiswal595@github.com':
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store: -c: line 0: syntax error near unexpected token `('
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store: -c: line 0: `\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store'
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/ajaiswal595/learning-Utilities.git
+   becc13f..154bbec  master -> master
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>git push myorigin master
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get: -c: line 0: syntax error near unexpected token `('
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get: -c: line 0: `\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" get'
+Username for 'https://github.com': ajaiswal595
+Password for 'https://ajaiswal595@github.com':
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store: -c: line 0: syntax error near unexpected token `('
+\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store: -c: line 0: `\"C:/Program Files (x86)/GitExtensions/GitCredentialWinStore/git-credential-winstore.exe\" store'
+Everything up-to-date
+
+C:\Users\LIPLADMIN\Desktop\MyLocalRepo>
+
+------------cloning git-----------
+
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Users\LIPLADMIN\Desktop\cloningGithubRepo>git clone https://github.com/ajaiswal595/learning-Utilities.git
+Cloning into 'learning-Utilities'...
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 7 (delta 1), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+
+C:\Users\LIPLADMIN\Desktop\cloningGithubRepo>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
